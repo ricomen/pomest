@@ -1,0 +1,238 @@
+section.section.section-activity
+  .container
+    h2.section-title Наша Основная Деятельность - Строительство Домов и Коттеджей
+    
+    .tabs-wrapper
+      a.tab-btn.is-active(href="/" data-toggle="tab") Строительство домов из кирпича
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из монолитного бетона
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из керамических блоков
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из газоселикатных блоков
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из газобетонных блоков
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из пеноблоков
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из клеенного бруса
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из оцилиндрованного бревна
+      a.tab-btn(href="/") Строительство домов из двойного бруса
+      a.tab-btn(href="/") Строительство домов из профилированного бруса
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из бруса
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из сип панелей
+      a.tab-btn(href="/" data-toggle="tab") Строительство домов из керамзито-бетонных блоков
+      a.tab-btn(href="/" data-toggle="tab") Строительство каркасных домов
+    .tab-content
+      .tab-pane
+        p.tab-text <span class='text-uppercase'>Дом из кирпича</span> пользуется большой популярностью, поскольку этот строительный материал позволяет получить прочное и долговечное строение. Стены домов из кирпича считаются прочными и долговечными конструкциями. Они обладают высокой огнеупорностью. Для увеличения их теплоизоляционных свойств потребуется при кладке кирпича оставить полости, которые заполняются утеплителем.
+    section.project
+      .project__top
+        a.project__toggler.project__toggler--active(href="/") Проект 1
+        a.project__toggler(href="/") Проект 2
+        a.project__toggler(href="/") Проект 3
+        a.project__toggler(href="/") Проект 4
+        a.project__toggler(href="/") Проект 5
+      .row
+        .project__sidebar.col-md-3
+          .project__caracteristics
+            h2.project__title Характеристика дома
+            table
+              tbody
+                tr
+                  td Общая площадь
+                  td 135.4 м <sup>2</sup>
+                tr
+                  td Жилая площадь
+                  td 97.2 <sup>2</sup>
+                tr
+                  td Размеры дома
+                  td 8x10 м, h=8,5 м
+                tr
+                  td Количенство комнат
+                  td 5
+            .project__caracteristics-content
+              .project__caracteristics-img
+                div План первого этажа                    
+                img(src="/img/project/house-1-first-floor.jpg", alt="")
+              .project__caracteristics-img
+                div План второго этажа
+                img(src="/img/project/house-1-second-floor.jpg", alt="")
+          .project__calc
+            h2.project__title Калькулятор стоимости дома
+            form(action="/")
+              select(name="")
+                option(value="") Цокольный фундамент
+                option(value="") Утепленная шведская плита
+                option(value="") Монолитная плита
+                option(value="") Финская плита(с обратной засыпкой)
+                option(value="") Ленточный
+                option(value="") Свайно-ростверный
+                option(value="") Свайно-винтовой
+                option(value="") Столбчатый
+              select(name="")
+                option(value="") Кирпич
+                option(value="") Клееный брус
+                option(value="") Монолитный каркас
+                option(value="") Каркасный дом
+                option(value="") Керамические блоки
+                option(value="") Керамзитобетонные блоки
+                option(value="") Оцилиндрованное бревно
+                option(value="") Брус профилированный
+                option(value="") Брус обычный
+                option(value="") Двойной брус
+                option(value="") Пеноблоки
+                option(value="") Газобетонные блоки
+                option(value="") Газоселикатные блоки
+                option(value="") СИП панели
+              select(name="")
+                option(value="") Утепление пенопластом
+                option(value="") Базальтовое утепление
+              select(name="")
+                option(value="") Выберете кровлю
+                option(value="") Мягкая черепица
+                option(value="") Металлочерепица
+                option(value="") Профнастил
+                option(value="") Фальцевая кровля
+                option(value="") Ондулин
+                option(value="") Ондувилла
+                option(value="") Керамическая черепица
+                option(value="") Композитная черепица
+              select(name="")
+                option(value="") Выберете фасад
+                option(value="") Виниловый сайдинг
+                option(value="") Металлический сайдинг
+                option(value="") Имитация бруса
+                option(value="") Облицовка корпичом
+                option(value="") Штукатурка
+                option(value="") Мокрый фасад
+                option(value="") Фиброцементные панели
+                option(value="") Фасадная плитка технониколь
+                option(value="") Утепление пенопластом
+                option(value="") Базальтовое утепление
+              select(name="")
+                option(value="") Выберете коммуникации
+                option(value="") Установка автономной канализации
+                option(value="") Шамбо
+                option(value="") Газоснабжение
+                option(value="") Разводка Электрики
+                option(value="") Выберете отделку
+                option(value="") Чистовая
+                option(value="") Черновая
+            
+
+              //- Веберет фундамент
+              //-   Цокольный фундамент
+              //-   Утепленная шведская плита
+              //-   Монолитная плита
+              //-   Финская плита(с обратной засыпкой)
+              //-   Ленточный
+              //-   Свайно-ростверный
+              //-   Свайно-винтовой
+              //-   Столбчатый
+
+              //- Выберете материал стен
+              //-   Кирпич
+              //-   Клееный брус
+              //-   Монолитный каркас
+              //-   Каркасный дом
+              //-   Керамические блоки
+              //-   Керамзитобетонные блоки
+              //-   Оцилиндрованное бревно
+              //-   Брус профилированный
+              //-   Брус обычный
+              //-   Двойной брус
+              //-   Пеноблоки
+              //-   Газобетонные блоки
+              //-   Газоселикатные блоки
+              //-   СИП панели
+
+              //- Выберете утепление стен
+              //-   Утепление пенопластом
+              //-   Базальтовое утепление
+
+              //- Выберете кровлю
+              //-   Мягкая черепица
+              //-   Металлочерепица
+              //-   Профнастил
+              //-   Фальцевая кровля
+              //-   Ондулин
+              //-   Ондувилла
+              //-   Керамическая черепица
+              //-   Композитная черепица
+
+              //- Выберете фасад
+              //-   Виниловый сайдинг
+              //-   Металлический сайдинг
+              //-   Имитация бруса
+              //-   Облицовка корпичом
+              //-   Штукатурка
+              //-   Мокрый фасад
+              //-   Фиброцементные панели
+              //-   Фасадная плитка технониколь
+              //-   Утепление пенопластом
+              //-   Базальтовое утепление
+
+              //- Выберете коммуникации
+              //-   Установка автономной канализации
+              //-   Шамбо
+              //-   Газоснабжение
+              //-   Разводка Электрики
+              //- Выберете отделку
+              //-   Чистовая
+              //-   Черновая
+            
+
+        .project__photo.col-md-6
+          img(src="/img/project/house-1.png", alt="Дом")
+        .project__sidebar.col-md-3          
+          h2.project__title Особенности<br>Выбранных материалов
+
+          .material-features
+            .material
+              .material__title
+                h2 Столбчатый
+              .material__compare
+                .material__column
+                  div Преимущества
+                  ul.material__list
+                    li Прочонсть
+                    li Долговечность
+                    li Экологичность
+                    li Эстетичность
+                .material__column
+                  div Недостатки
+                  ul.material__list
+                    li Дороговизна
+                    li Дороговизна
+                    li Дороговизна
+                    li Дороговизна
+      .project__panel
+        h2.project__title Этапы строительства
+        siction.building-stages
+          nav.building-stages__navbar
+            ul.building-stages__navbar-list
+              li.building-stages__navbar-item.building-stages__navbar-item--active
+                a(href="#prepare-st") Подготовка проекта<br/> и сметы,<br/> заключение договора
+              li.building-stages__navbar-item 
+                a(href="#instal-base-st") Установка фундамента
+              li.building-stages__navbar-item 
+                a(href="#build-wall-st") Возведение стен
+              li.building-stages__navbar-item 
+                a(href="#warming-wall-st") Утепление стен
+              li.building-stages__navbar-item 
+                a(href="#roofing-st") Кровельные работы
+              li.building-stages__navbar-item 
+                a(href="#front-operation-st") Фасадные работы
+              li.building-stages__navbar-item 
+                a(href="#communications-st") Коммуникации
+              li.building-stages__navbar-item 
+                a(href="#interior-st") Внутренняя отделка
+              li.building-stages__navbar-item 
+                a(href="#finish-st") Сдача дома
+          .building-stages__wrap
+            .building-stages__stage
+              .row
+                .building-stages__img.col-md-4.col-xs-8
+                  img(src="img/building-stages/stage-1.jpg", alt="Этап-1")
+                .building-stages__runtime.col-md-2.col-xs-4
+                  .building-stages__runtime-content
+                    p 2 недели
+                .building-stages__descr.col-md-6
+                  .building-stages__number Этап 1
+                  h2.building-stages__title Подготовка проекта сметы и заключение договора
+                  p.building-stages__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt beatae, voluptatibus impedit quod et vitae neque perspiciatis quidem velit saepe dicta temporibus iste explicabo! Numquam dolor illo quaerat tempore earum!

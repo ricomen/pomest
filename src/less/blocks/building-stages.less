@@ -1,0 +1,141 @@
+.building-stages {
+  &__navbar {    
+  margin-top: 15px; 
+  margin-bottom: 40px;
+    display: table;
+    width: 100%;  
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+    &-list {
+      display: table-row;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }//list
+
+    &-item {  
+      padding: 5px 0;
+      position: relative;
+      display: table-cell; 
+      vertical-align:middle;
+      height: 100%;
+      text-align: center;
+      font-family: @LG;
+      font-size: 18px;
+      line-height: 1;
+      color: #5285ab;      
+      background: #fff;
+      border-right: 1px solid #b3b3b3;
+      &:first-child::before, &:last-child::before {
+        position: absolute;
+        content: '';       
+      }
+      &:first-child::before {
+        left: 0;
+        top: 0;
+        border: 5px solid transparent;
+        border-left: 5px solid #f7f7f7;
+        border-top: 5px solid #f7f7f7;        
+      }
+      &:last-child::before {
+        right: 0;
+        bottom: -1px;
+        border: 5px solid transparent;
+        border-right: 5px solid #ccb;
+        border-bottom: 5px solid #ccb;        
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        position: relative;        
+        padding: 2px;
+        color: inherit;
+        line-height: 1;
+        transition: 0.25s ease-in-out;
+        &:hover {
+          color: #123262;
+          &::after {
+            border-color: #123262;
+          }
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border-bottom: 1px dotted #5285ab;
+        }
+      }
+
+      &--active {
+        color: #fff;
+        background: @blue;        
+        a::after {
+          display: none;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 20px;          
+          background-image: data-uri('../img/building-stages/menu-icon.svg');
+
+        }
+      }   
+    }//item
+  }//navbar
+
+  &__runtime {
+    box-sizing: border-box;
+    background-image: data-uri("../img/icon/big-watch.png");
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    &-content {      
+      position: relative;
+      border: 1px solid @blue;    
+      padding-top: 100%;
+      width: 100%;
+      height: 0;
+      left: 0;
+      right: 0;
+    }
+    p {
+      margin: 0;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      font-size: 20px;
+      line-height: 1.1;
+      transform: translateX(-50%);
+    }
+  }//runtime
+
+  &__descr {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &__number {
+    margin-bottom: 20px;
+    font-family: @LG;
+    font-size: 24px;
+    line-height: 1.1;
+    color: @blue;
+  }//number
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: @LG;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #5285ab;
+  }
+
+}

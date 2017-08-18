@@ -1,0 +1,45 @@
+.section-activity {
+
+}
+.tabs-wrapper {
+  font-size: 0;
+  margin-left: -0.394%;
+  margin-right: -0.394%;
+
+}
+.tab {
+  &-btn {
+    margin-left: 0.394%;
+    margin-right: 0.394%;
+    margin-bottom: 0.6%;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: top;
+    width: 13.15%;
+    font-size: 16px;
+    font-family: @LG;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: @blue;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.25s ease-in-out;
+    @media @tablet {
+      transition: none;
+    }
+    &:hover {
+      background: #123262;
+    }
+  }//btn
+
+  &-pane {
+    // display: none;
+    .active {
+      display: block;
+    }
+  }
+
+  &-text {
+    text-indent: 99px;
+  }
+}//tab
