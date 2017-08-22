@@ -8,14 +8,23 @@
 }
 .slider {
   display: none;
-  &__item {  
+  &__item {
+    padding-top: 119px;
     position: relative;  
-    min-height: 600px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
     color: #fff;
+    .container {
+      display: table;
+      height: 100%;      
+    }
+    @media @tablet {
+      padding-top: 300px;
+      min-height: 300px;      
+    }
 
     &-title {
       margin-bottom: 80px;
@@ -29,10 +38,9 @@
     }//title
 
     &-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
     }//content
 
     &-text {

@@ -23,17 +23,17 @@
     @media @tablet {
       float: none;
       .center;
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
     @media @phone {      
       width: 183px;    
       margin: none;  
     }
     img {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
     &-descr {
-      font-size: 12px;
+      font-size: 10px;
       line-height: 1.1;
       color: #fff;      
       @media @phone {
@@ -67,7 +67,9 @@
       vertical-align: middle;
       padding-left: 20px;
       color: #fff;
-      font-size: 13px;
+      font-size: 10px;
+      line-height: 1.1;
+      letter-spacing: 0.8px;
       text-align-last: auto;
       &::before {
         position: absolute;
@@ -100,9 +102,10 @@
         width: 16px;
         height: 16px;
       }
-
       a {
-        color: inherit
+        font-size: 8px;
+        color: inherit;
+        border-bottom: 1px dotted #fff;       
       }
     }//info-item
   }//info
