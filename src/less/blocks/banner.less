@@ -1,0 +1,25 @@
+.index-page {
+  .banner {    
+    @media @phone {
+      display: block;    
+    }
+  }
+}
+.banner {
+  position: relative;
+  display: none;
+  min-height: 312px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title {    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 42px;    
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+  }//title
+}

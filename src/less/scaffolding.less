@@ -7,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
-body {  
+body {
+  position: relative;  
   margin: 0;
   padding: 0;
   min-width: 320px;
@@ -20,6 +21,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  .center;
+  max-width: 1140px;
+  @media @tablet {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 
 img {
   max-width: 100%;

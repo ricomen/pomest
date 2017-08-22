@@ -177,7 +177,7 @@ gulp.task('watch', ['dev'], () => {
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/templates/**/*.pug', ['pug']);
   gulp.watch('src/png-sprite-icons/*.png', ['png:sprite']);
-  gulp.watch('src/img/*.{png, jpg, jpeg, svg}', ['img']);
+  gulp.watch('src/img/**/*.*', ['img']);
   gulp.watch('src/svg-sprite-icons/*.svg', ['svg:sprite']);
   gulp.watch('src/fonts/**/*.*', ['fonts']);
   gulp.watch('build/*.html', browserSync.reload);
@@ -206,7 +206,7 @@ gulp.task('fonts', () => {
   Image optimaze
  */
 gulp.task('img', () => {
-  return gulp.src('src/img/**/*.{svg,jpg,jpeg,png}')
+  return gulp.src('src/img/**/*.*')
     .pipe(gulpIf(!isDev, cache(imagemin({
       interlaced: true,
       progressive: true,
@@ -223,6 +223,8 @@ gulp.task('dev', () => {
   runSequence(
     'clear',
     'img',
+    'png:sprite',
+    'svg:sprite',
     'fonts',
     'less',
     'css-libs',
@@ -239,6 +241,8 @@ gulp.task('build', () => {
   runSequence(
     'clean',
     'img',
+    'png:sprite',
+    'svg:sprite',
     'fonts',
     'less',
     'css-libs',
